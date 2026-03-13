@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Doe — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="avatar">
+        <img src="https://api.dicebear.com/9.x/initials/svg?seed=JD&backgroundColor=1a1a2e&textColor=e0e0e0&fontSize=40" alt="Avatar">
+      </div>
+      <h1>John Doe</h1>
+      <p class="tagline">Software Engineer &amp; Creative Thinker</p>
+      <p class="bio">
+        I build elegant, performant software with a focus on user experience.
+        Passionate about clean code, open source, and continuous learning.
+        Currently based in Jakarta, Indonesia.
+      </p>
+    </section>
+
+    <!-- Work History -->
+    <section class="section">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="date">2023 — Present</span>
+          <h3>Senior Software Engineer</h3>
+          <p class="company">Acme Corp</p>
+          <p>Leading frontend architecture and mentoring junior developers. Built design system used across 12 products.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">2020 — 2023</span>
+          <h3>Software Engineer</h3>
+          <p class="company">StartupXYZ</p>
+          <p>Full-stack development with React and Node.js. Shipped features serving 500k+ users.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">2018 — 2020</span>
+          <h3>Junior Developer</h3>
+          <p class="company">Digital Agency Co.</p>
+          <p>Built responsive websites and web applications for diverse clients across various industries.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section">
+      <h2>Get in Touch</h2>
+      <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 John Doe. All rights reserved.</p>
+  </footer>
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    const saved = localStorage.getItem('theme');
+    if (saved === 'light') document.body.classList.add('light');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('light');
+      localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
+    });
+  </script>
+</body>
+</html>
