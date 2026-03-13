@@ -1,0 +1,24 @@
+{
+  "name": "myportofolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robbyaww/MyPortofolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/robbyaww/MyPortofolio/issues"
+  },
+  "homepage": "https://github.com/robbyaww/MyPortofolio#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
