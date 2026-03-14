@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git init:*)",
+      "Bash(git branch:*)",
+      "Bash(gh auth:*)",
+      "Bash(brew install:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(gh repo:*)",
+      "Bash(gh api:*)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(brew list:*)",
+      "Bash(git rm:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:www.linkedin.com)",
+      "WebSearch",
+      "Bash(find /Users/vra0367107/Desktop /Users/vra0367107/Pictures /Users/vra0367107/Documents -maxdepth 2 -iregex \".*\\\\.\\\\\\(png\\\\|jpg\\\\|jpeg\\\\\\)\")",
+      "Bash(ls \"/Users/vra0367107/Downloads/96DEBC82-D09F-4769-8684-2EA5D2ADF4F2\"*)"
+    ]
+  }
+}

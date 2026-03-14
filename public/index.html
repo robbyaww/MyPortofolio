@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>John Doe — Portfolio</title>
+  <title>Robby Awalul — iOS Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <canvas id="bgCanvas"></canvas>
   <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
     <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
     <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -15,14 +16,14 @@
     <!-- Hero -->
     <section class="hero">
       <div class="avatar">
-        <img src="https://api.dicebear.com/9.x/initials/svg?seed=JD&backgroundColor=1a1a2e&textColor=e0e0e0&fontSize=40" alt="Avatar">
+        <img src="/images/avatar.png" alt="Robby Awalul">
       </div>
-      <h1>John Doe</h1>
-      <p class="tagline">Software Engineer &amp; Creative Thinker</p>
+      <h1>Robby Awalul</h1>
+      <p class="tagline">Mobile App Developer | iOS Developer | Swift</p>
       <p class="bio">
-        I build elegant, performant software with a focus on user experience.
-        Passionate about clean code, open source, and continuous learning.
-        Currently based in Jakarta, Indonesia.
+        iOS Developer with 6+ years of experience building high-scale apps used by millions.
+        Specialized in Swift, scalable architecture, CI/CD automation, and performance optimization.
+        Based in Jakarta, Indonesia.
       </p>
     </section>
 
@@ -30,24 +31,107 @@
     <section class="section">
       <h2>Experience</h2>
       <div class="timeline">
-        <div class="timeline-item">
-          <span class="date">2023 — Present</span>
-          <h3>Senior Software Engineer</h3>
-          <p class="company">Acme Corp</p>
-          <p>Leading frontend architecture and mentoring junior developers. Built design system used across 12 products.</p>
-        </div>
-        <div class="timeline-item">
-          <span class="date">2020 — 2023</span>
-          <h3>Software Engineer</h3>
-          <p class="company">StartupXYZ</p>
-          <p>Full-stack development with React and Node.js. Shipped features serving 500k+ users.</p>
-        </div>
-        <div class="timeline-item">
-          <span class="date">2018 — 2020</span>
-          <h3>Junior Developer</h3>
-          <p class="company">Digital Agency Co.</p>
-          <p>Built responsive websites and web applications for diverse clients across various industries.</p>
-        </div>
+        <details class="timeline-item">
+          <summary>
+            <span class="date">Jan 2026 — Present</span>
+            <h3>Senior iOS Developer</h3>
+            <p class="company">PT. Infosys Solusi Terpadu</p>
+          </summary>
+          <div class="timeline-details">
+            <p>Senior iOS development role based in Jakarta, Indonesia.</p>
+          </div>
+        </details>
+        <details class="timeline-item">
+          <summary>
+            <span class="date">Oct 2024 — Dec 2025</span>
+            <h3>iOS Developer</h3>
+            <p class="company">Maybank</p>
+          </summary>
+          <div class="timeline-details">
+            <ul>
+              <li>Migrated major legacy modules from Objective-C to Swift, improving code maintainability and reducing technical debt.</li>
+              <li>Designed scalable architecture with MVVM patterns to support new feature development with improved performance.</li>
+              <li>Partnered with UI/UX designers to refine flows, reducing user friction and enhancing usability.</li>
+              <li>Performed deep debugging and optimization to reduce app lags and improve load time.</li>
+              <li>Integrated RESTful API modules with secure data handling and robust error handling.</li>
+            </ul>
+          </div>
+        </details>
+        <details class="timeline-item">
+          <summary>
+            <span class="date">Feb 2020 — Sep 2024</span>
+            <h3>iOS Developer</h3>
+            <p class="company">KoinWorks</p>
+          </summary>
+          <div class="timeline-details">
+            <ul>
+              <li>Developed and maintained core features using Swift, contributing to growth of a large-scale app.</li>
+              <li>Collaborated with Product, Backend, and QA to deliver features with high accuracy and speed.</li>
+              <li>Managed deployment of apps to the App Store using Fastlane while maintaining a secure codebase.</li>
+              <li>Improved application performance through code optimization and refactoring.</li>
+              <li>Built automated unit tests to ensure stability, maintaining a 99% crash-free rate.</li>
+              <li>Integrated Firebase, push notifications, and analytics to improve engagement and user retention.</li>
+            </ul>
+          </div>
+        </details>
+        <details class="timeline-item">
+          <summary>
+            <span class="date">Mar 2019 — Jan 2020</span>
+            <h3>iOS Developer</h3>
+            <p class="company">Apple Developer Academy | Indonesia</p>
+          </summary>
+          <div class="timeline-details">
+            <ul>
+              <li>Developed 4 end-to-end iOS applications using the Challenge-Based Learning framework.</li>
+              <li>Learned to build iOS apps from scratch, from ideation through to App Store-ready delivery.</li>
+              <li>Implemented app designs following Apple's Human Interface Guidelines (HIG).</li>
+              <li>Gained hands-on experience with Swift, UIKit, and essential Apple frameworks.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <a href="#" class="project-card">
+          <div class="project-thumb">
+            <img src="https://placehold.co/400x240/1a1a2e/e0e0e0?text=Project+1" alt="Project 1">
+          </div>
+          <h3>Design System</h3>
+        </a>
+        <a href="#" class="project-card">
+          <div class="project-thumb">
+            <img src="https://placehold.co/400x240/1a1a2e/e0e0e0?text=Project+2" alt="Project 2">
+          </div>
+          <h3>Analytics Dashboard</h3>
+        </a>
+        <a href="#" class="project-card">
+          <div class="project-thumb">
+            <img src="https://placehold.co/400x240/1a1a2e/e0e0e0?text=Project+3" alt="Project 3">
+          </div>
+          <h3>Mobile App</h3>
+        </a>
+        <a href="#" class="project-card">
+          <div class="project-thumb">
+            <img src="https://placehold.co/400x240/1a1a2e/e0e0e0?text=Project+4" alt="Project 4">
+          </div>
+          <h3>E-commerce Platform</h3>
+        </a>
+        <a href="#" class="project-card">
+          <div class="project-thumb">
+            <img src="https://placehold.co/400x240/1a1a2e/e0e0e0?text=Project+5" alt="Project 5">
+          </div>
+          <h3>CLI Tool</h3>
+        </a>
+        <a href="#" class="project-card">
+          <div class="project-thumb">
+            <img src="https://placehold.co/400x240/1a1a2e/e0e0e0?text=Project+6" alt="Project 6">
+          </div>
+          <h3>Open Source Library</h3>
+        </a>
       </div>
     </section>
 
@@ -64,7 +148,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 John Doe. All rights reserved.</p>
+    <p>&copy; 2026 Robby Awalul. All rights reserved.</p>
   </footer>
   <script>
     const toggle = document.getElementById('themeToggle');
@@ -74,6 +158,206 @@
       document.body.classList.toggle('light');
       localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
     });
+  </script>
+  <script>
+    // Floating Swift/Apple icons background
+    const canvas = document.getElementById('bgCanvas');
+    const ctx = canvas.getContext('2d');
+    let icons = [];
+    let mouse = { x: null, y: null };
+    const ICON_COUNT = 18;
+    const CONNECT_DIST = 150;
+
+    // SVG icon paths drawn on canvas
+    const iconDrawers = [
+      // Swift bird
+      (ctx, s) => {
+        ctx.beginPath();
+        ctx.moveTo(s*0.85, s*0.15);
+        ctx.bezierCurveTo(s*0.55, s*0.35, s*0.25, s*0.55, s*0.1, s*0.75);
+        ctx.bezierCurveTo(s*0.35, s*0.65, s*0.55, s*0.5, s*0.7, s*0.35);
+        ctx.bezierCurveTo(s*0.45, s*0.55, s*0.25, s*0.7, s*0.15, s*0.8);
+        ctx.bezierCurveTo(s*0.4, s*0.85, s*0.7, s*0.75, s*0.9, s*0.5);
+        ctx.bezierCurveTo(s*0.95, s*0.35, s*0.9, s*0.2, s*0.85, s*0.15);
+        ctx.closePath();
+        ctx.fill();
+      },
+      // Apple logo (simplified)
+      (ctx, s) => {
+        ctx.beginPath();
+        ctx.arc(s*0.5, s*0.55, s*0.35, 0, Math.PI*2);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(s*0.5, s*0.25, s*0.12, 0, Math.PI*2);
+        ctx.fill();
+        // leaf
+        ctx.beginPath();
+        ctx.ellipse(s*0.62, s*0.15, s*0.12, s*0.06, -0.5, 0, Math.PI*2);
+        ctx.fill();
+      },
+      // iPhone
+      (ctx, s) => {
+        const r = s*0.08;
+        ctx.beginPath();
+        ctx.roundRect(s*0.25, s*0.05, s*0.5, s*0.9, r);
+        ctx.fill();
+        ctx.clearRect(s*0.3, s*0.12, s*0.4, s*0.7);
+        ctx.beginPath();
+        ctx.arc(s*0.5, s*0.88, s*0.04, 0, Math.PI*2);
+        ctx.fill();
+      },
+      // Xcode hammer
+      (ctx, s) => {
+        ctx.save();
+        ctx.translate(s*0.5, s*0.5);
+        ctx.rotate(-0.7);
+        ctx.fillRect(-s*0.04, -s*0.4, s*0.08, s*0.55);
+        ctx.fillRect(-s*0.15, -s*0.4, s*0.3, s*0.12);
+        ctx.restore();
+      },
+      // Gear/settings
+      (ctx, s) => {
+        const cx = s*0.5, cy = s*0.5, or = s*0.38, ir = s*0.28;
+        ctx.beginPath();
+        for (let i = 0; i < 8; i++) {
+          const a = (i/8)*Math.PI*2;
+          const a2 = ((i+0.5)/8)*Math.PI*2;
+          ctx.lineTo(cx+Math.cos(a)*or, cy+Math.sin(a)*or);
+          ctx.lineTo(cx+Math.cos(a2)*ir, cy+Math.sin(a2)*ir);
+        }
+        ctx.closePath();
+        ctx.fill();
+        ctx.globalCompositeOperation = 'destination-out';
+        ctx.beginPath();
+        ctx.arc(cx, cy, s*0.14, 0, Math.PI*2);
+        ctx.fill();
+        ctx.globalCompositeOperation = 'source-over';
+      },
+      // Code brackets < />
+      (ctx, s) => {
+        ctx.lineWidth = s*0.08;
+        ctx.lineCap = 'round';
+        ctx.beginPath();
+        ctx.moveTo(s*0.35, s*0.2); ctx.lineTo(s*0.1, s*0.5); ctx.lineTo(s*0.35, s*0.8);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(s*0.65, s*0.2); ctx.lineTo(s*0.9, s*0.5); ctx.lineTo(s*0.65, s*0.8);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(s*0.55, s*0.15); ctx.lineTo(s*0.45, s*0.85);
+        ctx.stroke();
+      },
+      // Bug icon
+      (ctx, s) => {
+        ctx.beginPath();
+        ctx.ellipse(s*0.5, s*0.55, s*0.22, s*0.3, 0, 0, Math.PI*2);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(s*0.5, s*0.2, s*0.12, 0, Math.PI*2);
+        ctx.fill();
+        // antennae
+        ctx.lineWidth = s*0.04;
+        ctx.beginPath();
+        ctx.moveTo(s*0.42, s*0.12); ctx.lineTo(s*0.3, s*0.02);
+        ctx.moveTo(s*0.58, s*0.12); ctx.lineTo(s*0.7, s*0.02);
+        ctx.stroke();
+      },
+      // Terminal prompt >_
+      (ctx, s) => {
+        ctx.lineWidth = s*0.08;
+        ctx.lineCap = 'round';
+        ctx.beginPath();
+        ctx.moveTo(s*0.15, s*0.25); ctx.lineTo(s*0.45, s*0.5); ctx.lineTo(s*0.15, s*0.75);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(s*0.5, s*0.75); ctx.lineTo(s*0.85, s*0.75);
+        ctx.stroke();
+      },
+    ];
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+    window.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
+    window.addEventListener('mouseout', () => { mouse.x = null; mouse.y = null; });
+
+    class FloatingIcon {
+      constructor() { this.reset(); }
+      reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.vx = (Math.random() - 0.5) * 0.4;
+        this.vy = (Math.random() - 0.5) * 0.4;
+        this.size = Math.random() * 18 + 14;
+        this.rotation = Math.random() * Math.PI * 2;
+        this.rotSpeed = (Math.random() - 0.5) * 0.008;
+        this.iconIdx = Math.floor(Math.random() * iconDrawers.length);
+        this.opacity = Math.random() * 0.2 + 0.08;
+      }
+      update() {
+        if (mouse.x !== null) {
+          const dx = this.x - mouse.x, dy = this.y - mouse.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 160) {
+            this.vx += dx / dist * 0.12;
+            this.vy += dy / dist * 0.12;
+          }
+        }
+        this.vx *= 0.995; this.vy *= 0.995;
+        this.x += this.vx; this.y += this.vy;
+        this.rotation += this.rotSpeed;
+        if (this.x < -30) this.x = canvas.width + 30;
+        if (this.x > canvas.width + 30) this.x = -30;
+        if (this.y < -30) this.y = canvas.height + 30;
+        if (this.y > canvas.height + 30) this.y = -30;
+      }
+    }
+
+    for (let i = 0; i < ICON_COUNT; i++) icons.push(new FloatingIcon());
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const light = document.body.classList.contains('light');
+      const lineBase = light ? 'rgba(100,100,180,' : 'rgba(255,255,255,';
+
+      // Draw connecting lines
+      for (let i = 0; i < icons.length; i++) {
+        for (let j = i + 1; j < icons.length; j++) {
+          const dx = icons[i].x - icons[j].x, dy = icons[i].y - icons[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < CONNECT_DIST) {
+            ctx.beginPath();
+            ctx.moveTo(icons[i].x, icons[i].y);
+            ctx.lineTo(icons[j].x, icons[j].y);
+            ctx.strokeStyle = lineBase + (1 - dist / CONNECT_DIST) * 0.1 + ')';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+          }
+        }
+      }
+
+      // Draw icons
+      for (const icon of icons) {
+        icon.update();
+        ctx.save();
+        ctx.translate(icon.x, icon.y);
+        ctx.rotate(icon.rotation);
+        ctx.translate(-icon.size / 2, -icon.size / 2);
+        ctx.globalAlpha = icon.opacity;
+        const color = light ? 'rgba(80,80,160,1)' : 'rgba(255,255,255,1)';
+        ctx.fillStyle = color;
+        ctx.strokeStyle = color;
+        ctx.lineWidth = icon.size * 0.06;
+        iconDrawers[icon.iconIdx](ctx, icon.size);
+        ctx.restore();
+      }
+
+      requestAnimationFrame(draw);
+    }
+    draw();
   </script>
 </body>
 </html>
